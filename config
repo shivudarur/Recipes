@@ -1,0 +1,7 @@
+Host github.com
+     IdentityFile ~/.ssh/id_rsa
+     IdentitiesOnly yes
+
+Host git@github.com:shivudarur
+     IdentityFile ~/Users/shivananda.darura/AndroidStudioProjects/Personal/id_rsa_Shiva
+     IdentitiesOnly yes

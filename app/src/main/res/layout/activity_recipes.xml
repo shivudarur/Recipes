@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/cl_parent"
+    style="@style/Match"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recipes"
+        style="@style/Match"
+        android:padding="@dimen/dp10"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

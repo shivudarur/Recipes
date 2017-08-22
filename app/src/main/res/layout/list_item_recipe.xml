@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/dp20"
+              android:background="?android:attr/selectableItemBackground"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="@dimen/dp10">
+
+    <ImageView
+        android:id="@+id/iv_recipe"
+        style="@style/Wrap"
+        android:minHeight="@dimen/recipe_img_size"
+        android:minWidth="@dimen/recipe_img_size"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/customRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_favorite_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/txt_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp20"
+            android:gravity="center_horizontal"
+            android:text="@string/favorite"/>
+
+        <ImageButton
+            android:id="@+id/iv_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_toEndOf="@+id/txt_favorite"
+            android:background="@drawable/favorite_selector"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

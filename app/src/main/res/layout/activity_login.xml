@@ -1,0 +1,66 @@
+<ScrollView
+    android:id="@+id/login_scroll_view"
+    style="@style/Match"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/ic_food"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/MatchWidth"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/txt_error_message"
+            style="@style/ErrorMsgStyle"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp10"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_email_input_layout"
+            style="@style/TextInputLayoutStyle.LoginField"
+            android:theme="@style/TextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/EditTextStyle"
+                android:layout_height="match_parent"
+                android:hint="@string/email_id"
+                android:inputType="textEmailAddress"
+                android:theme="@style/EditTextStyle"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_password_input_layout"
+            style="@style/TextInputLayoutStyle.LoginField"
+            android:theme="@style/TextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/edit_password"
+                style="@style/EditTextStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:theme="@style/EditTextStyle"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/MatchWidth"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/button_orange_selector_flat"
+            android:enabled="false"
+            android:text="@string/login"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>
